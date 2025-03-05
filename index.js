@@ -56,8 +56,8 @@ app.post('/update-cobj', async (req, res) => {
         'Content-Type': 'application/json'
     };
     try { 
-        await axios.patch(updateMovie, update, { headers } );
-        res.redirect('back');
+        await axios.post(updateMovie, update, { headers } );
+        res.redirect('/');
     } catch(error) {
         console.error(error);
     }
