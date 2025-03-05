@@ -6,8 +6,13 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body    
         h1 Movies
-        .cards 
+        table
+            tr
+                th Name
+                th Genre 
+                th Rating
             each movie in data
-                .card 
-                    h2.card__name #{movie.properties.name}
-                    p.card__email #{movie.properties.genre} - #{movie.properties.rating}
+                tr
+                    td #{movie.properties.name}
+                    td #{movie.properties.genre}
+                    td #{movie.properties.rating}
