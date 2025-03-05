@@ -19,11 +19,10 @@ const PRIVATE_APP_ACCESS = '';
 // * Code for Route 2 goes here
 app.get('/update-cobj', function(res, req) {
     try {
-        res.render('contacts', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' });      
+        res.render('updates', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' });      
     } catch (error) {
         console.error(error);
     }
-
 });
 
 // TODO: ROUTE 3 - Create a new app.post route for the custom objects form to create or update your custom object data. Once executed, redirect the user to the homepage.
