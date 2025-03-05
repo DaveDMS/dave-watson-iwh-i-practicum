@@ -36,6 +36,11 @@ app.post('/update-cobj', async (req, res) => {
             "rating": req.body.rating,
         }
     }
+    const updateMovie = `https://api.hubapi.com/crm/v3/objects/p49464792_movies`;
+    const headers = {
+        Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
+        'Content-Type': 'application/json'
+    };
 });
 
 /** 
