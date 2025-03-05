@@ -19,6 +19,13 @@ app.get('/', async (req, res) => {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
     }
+    try {
+        const resp = await axios.get(movies, { headers });
+        const data = resp.data.results;
+        res.render('movies', { title: 'Movies | HubSpot APIs', data });      
+    } catch (error) {
+        console.error(error);
+    }
 });
 
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
