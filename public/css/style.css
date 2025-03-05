@@ -6,7 +6,7 @@ body, * {
     padding: 0;
 }
 
-h1 {
+h1,p,form {
     margin: 1rem;
 }
 
@@ -58,7 +58,7 @@ input[type="submit"] {
 }
 
 table {
-
+    margin:1rem;
 }
 table tr {
 
