@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Movies
+        p
+            a(href="/update-cobj") Add to this table
+        table
+            tr
+                th Name
+                th Genre 
+                th Rating
+            each movie in data
+                tr
+                    td #{movie.properties.name}
+                    td #{movie.properties.genre}
+                    td #{movie.properties.rating}
