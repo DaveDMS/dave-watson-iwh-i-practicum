@@ -17,7 +17,7 @@ const PRIVATE_APP_ACCESS = '';
 // TODO: ROUTE 2 - Create a new app.get route for the form to create or update new custom object data. Send this data along in the next route.
 
 // * Code for Route 2 goes here
-app.get('/update-cobj', function(res, req) {
+app.get('/update-cobj', async (req, res) => {
     try {
         res.render('updates', { title: 'Update Custom Object Form | Integrating With HubSpot I Practicum' });      
     } catch (error) {
