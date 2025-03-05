@@ -6,9 +6,10 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body
         h1 Add a Movie
-        input(type="text" name="name" placeholder="Name")
-        input(type="text" name="genre" placeholder="Genre")
-        input(type="text" name="rating" placeholder="Rating")
-        input(type="submit")
-        p
-            a(href="./") Return to the homepage
+        form(action="" method="POST")
+            input(type="text" name="name" placeholder="Name")
+            input(type="text" name="genre" placeholder="Genre")
+            input(type="text" name="rating" placeholder="Rating")
+            input(type="submit")
+            p
+                a(href="./") Return to the homepage
