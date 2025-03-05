@@ -41,6 +41,12 @@ app.post('/update-cobj', async (req, res) => {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
     };
+    try { 
+        await axios.patch(updateMovie, update, { headers } );
+        res.redirect('back');
+    } catch(error) {
+        console.error(error);
+    }
 });
 
 /** 
