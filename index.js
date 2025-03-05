@@ -14,7 +14,7 @@ const PRIVATE_APP_ACCESS = '';
 
 // * Code for Route 1 goes here
 app.get('/', async (req, res) => {
-    const movies = 'https://api.hubspot.com/crm/v3/objects/p49464792_movies';
+    const movies = 'https://api.hubspot.com/crm/v3/objects/p49464792_movies?properties=name,genre,rating';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
